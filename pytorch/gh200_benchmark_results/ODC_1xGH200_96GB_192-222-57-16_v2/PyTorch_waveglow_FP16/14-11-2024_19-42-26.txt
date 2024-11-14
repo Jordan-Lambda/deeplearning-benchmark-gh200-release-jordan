@@ -1,0 +1,176 @@
+/usr/local/lib/python3.10/dist-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/workspace/benchmark/SpeechSynthesis/Tacotron2/train.py:404: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=args.amp)
+DLL 2024-11-14 19:42:31.440750 - PARAMETER output : ./ 
+DLL 2024-11-14 19:42:31.440795 - PARAMETER dataset_path : /data/tacotron2/LJSpeech-1.1 
+DLL 2024-11-14 19:42:31.440810 - PARAMETER model_name : WaveGlow 
+DLL 2024-11-14 19:42:31.440820 - PARAMETER log_file : nvlog.json 
+DLL 2024-11-14 19:42:31.440829 - PARAMETER anneal_steps : None 
+DLL 2024-11-14 19:42:31.440839 - PARAMETER anneal_factor : 0.1 
+DLL 2024-11-14 19:42:31.440849 - PARAMETER config_file : None 
+DLL 2024-11-14 19:42:31.440858 - PARAMETER seed : None 
+DLL 2024-11-14 19:42:31.440866 - PARAMETER epochs : 2 
+DLL 2024-11-14 19:42:31.440876 - PARAMETER epochs_per_checkpoint : 50 
+DLL 2024-11-14 19:42:31.440885 - PARAMETER checkpoint_path :  
+DLL 2024-11-14 19:42:31.440894 - PARAMETER resume_from_last : False 
+DLL 2024-11-14 19:42:31.440903 - PARAMETER dynamic_loss_scaling : True 
+DLL 2024-11-14 19:42:31.440913 - PARAMETER amp : False 
+DLL 2024-11-14 19:42:31.440921 - PARAMETER cudnn_enabled : True 
+DLL 2024-11-14 19:42:31.440929 - PARAMETER cudnn_benchmark : True 
+DLL 2024-11-14 19:42:31.440937 - PARAMETER disable_uniform_initialize_bn_weight : False 
+DLL 2024-11-14 19:42:31.440946 - PARAMETER use_saved_learning_rate : False 
+DLL 2024-11-14 19:42:31.440954 - PARAMETER learning_rate : 0.0 
+DLL 2024-11-14 19:42:31.440963 - PARAMETER weight_decay : 0.0 
+DLL 2024-11-14 19:42:31.440971 - PARAMETER grad_clip_thresh : 65504.0 
+DLL 2024-11-14 19:42:31.440980 - PARAMETER batch_size : 48 
+DLL 2024-11-14 19:42:31.440989 - PARAMETER grad_clip : 5.0 
+DLL 2024-11-14 19:42:31.440998 - PARAMETER load_mel_from_disk : False 
+DLL 2024-11-14 19:42:31.441006 - PARAMETER training_files : filelists/ljs_audio_text_train_subset_625_filelist.txt 
+DLL 2024-11-14 19:42:31.441015 - PARAMETER validation_files : filelists/ljs_audio_text_val_filelist.txt 
+DLL 2024-11-14 19:42:31.441023 - PARAMETER text_cleaners : ['english_cleaners'] 
+DLL 2024-11-14 19:42:31.441035 - PARAMETER max_wav_value : 32768.0 
+DLL 2024-11-14 19:42:31.441044 - PARAMETER sampling_rate : 22050 
+DLL 2024-11-14 19:42:31.441052 - PARAMETER filter_length : 1024 
+DLL 2024-11-14 19:42:31.441060 - PARAMETER hop_length : 256 
+DLL 2024-11-14 19:42:31.441068 - PARAMETER win_length : 1024 
+DLL 2024-11-14 19:42:31.441076 - PARAMETER mel_fmin : 0.0 
+DLL 2024-11-14 19:42:31.441084 - PARAMETER mel_fmax : 8000.0 
+DLL 2024-11-14 19:42:31.441093 - PARAMETER rank : 0 
+DLL 2024-11-14 19:42:31.441115 - PARAMETER world_size : 1 
+DLL 2024-11-14 19:42:31.441127 - PARAMETER dist_url : tcp://localhost:23456 
+DLL 2024-11-14 19:42:31.441135 - PARAMETER group_name : group_name 
+DLL 2024-11-14 19:42:31.441143 - PARAMETER dist_backend : nccl 
+DLL 2024-11-14 19:42:31.441151 - PARAMETER bench_class :  
+DLL 2024-11-14 19:42:31.441159 - PARAMETER model_name : Tacotron2_PyT 
+/workspace/benchmark/SpeechSynthesis/Tacotron2/train.py:484: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=args.amp):
+DLL 2024-11-14 19:42:34.012351 - (0, 0) glob_iter/iters_per_epoch : 0/13 
+DLL 2024-11-14 19:42:46.250580 - (0, 0) train_loss : 0.001995301339775324 
+DLL 2024-11-14 19:42:50.651789 - (0, 0) train_items_per_sec : 23077.521110634498 items/s
+DLL 2024-11-14 19:42:50.651878 - (0, 0) train_iter_time : 16.639568788999895 
+DLL 2024-11-14 19:42:50.658085 - (0, 1) glob_iter/iters_per_epoch : 1/13 
+DLL 2024-11-14 19:42:52.913097 - (0, 1) train_loss : 0.0019025654764845967 
+DLL 2024-11-14 19:42:53.468160 - (0, 1) train_items_per_sec : 136650.4699704722 items/s
+DLL 2024-11-14 19:42:53.468222 - (0, 1) train_iter_time : 2.810089127999163 
+DLL 2024-11-14 19:42:53.469998 - (0, 2) glob_iter/iters_per_epoch : 2/13 
+DLL 2024-11-14 19:42:53.690724 - (0, 2) train_loss : 0.0021329300943762064 
+DLL 2024-11-14 19:42:54.213696 - (0, 2) train_items_per_sec : 516328.87721084466 items/s
+DLL 2024-11-14 19:42:54.213740 - (0, 2) train_iter_time : 0.7437120350004989 
+DLL 2024-11-14 19:42:54.215237 - (0, 3) glob_iter/iters_per_epoch : 3/13 
+DLL 2024-11-14 19:42:54.435963 - (0, 3) train_loss : 0.0023015926126390696 
+DLL 2024-11-14 19:42:54.959533 - (0, 3) train_items_per_sec : 515919.65902322665 items/s
+DLL 2024-11-14 19:42:54.959573 - (0, 3) train_iter_time : 0.7443019340007595 
+DLL 2024-11-14 19:42:54.959790 - (0, 4) glob_iter/iters_per_epoch : 4/13 
+DLL 2024-11-14 19:42:55.181173 - (0, 4) train_loss : 0.001975984312593937 
+DLL 2024-11-14 19:42:55.704733 - (0, 4) train_items_per_sec : 515473.2871889464 items/s
+DLL 2024-11-14 19:42:55.704774 - (0, 4) train_iter_time : 0.7449464589990384 
+DLL 2024-11-14 19:42:55.705014 - (0, 5) glob_iter/iters_per_epoch : 5/13 
+DLL 2024-11-14 19:42:55.921627 - (0, 5) train_loss : 0.0025516722816973925 
+DLL 2024-11-14 19:42:56.445138 - (0, 5) train_items_per_sec : 518828.13801702333 items/s
+DLL 2024-11-14 19:42:56.445181 - (0, 5) train_iter_time : 0.7401294800001779 
+DLL 2024-11-14 19:42:56.445424 - (0, 6) glob_iter/iters_per_epoch : 6/13 
+DLL 2024-11-14 19:42:56.666522 - (0, 6) train_loss : 0.0018305217381566763 
+DLL 2024-11-14 19:42:57.189624 - (0, 6) train_items_per_sec : 515987.83745757863 items/s
+DLL 2024-11-14 19:42:57.189667 - (0, 6) train_iter_time : 0.7442035879994364 
+DLL 2024-11-14 19:42:57.189883 - (0, 7) glob_iter/iters_per_epoch : 7/13 
+DLL 2024-11-14 19:42:57.411037 - (0, 7) train_loss : 0.0020124753937125206 
+DLL 2024-11-14 19:42:57.934313 - (0, 7) train_items_per_sec : 515837.00403442566 items/s
+DLL 2024-11-14 19:42:57.934362 - (0, 7) train_iter_time : 0.7444211969996104 
+DLL 2024-11-14 19:42:57.935840 - (0, 8) glob_iter/iters_per_epoch : 8/13 
+DLL 2024-11-14 19:42:58.156871 - (0, 8) train_loss : 0.0023646976333111525 
+DLL 2024-11-14 19:42:58.680194 - (0, 8) train_items_per_sec : 515878.44361076533 items/s
+DLL 2024-11-14 19:42:58.680240 - (0, 8) train_iter_time : 0.7443613989998994 
+DLL 2024-11-14 19:42:58.684435 - (0, 9) glob_iter/iters_per_epoch : 9/13 
+DLL 2024-11-14 19:42:58.905325 - (0, 9) train_loss : 0.002306857146322727 
+DLL 2024-11-14 19:42:59.428658 - (0, 9) train_items_per_sec : 515968.4516419012 items/s
+DLL 2024-11-14 19:42:59.428699 - (0, 9) train_iter_time : 0.7442315489988687 
+DLL 2024-11-14 19:42:59.428902 - (0, 10) glob_iter/iters_per_epoch : 10/13 
+DLL 2024-11-14 19:42:59.649609 - (0, 10) train_loss : 0.0016684229485690594 
+DLL 2024-11-14 19:43:00.172755 - (0, 10) train_items_per_sec : 516227.7254232927 items/s
+DLL 2024-11-14 19:43:00.172801 - (0, 10) train_iter_time : 0.7438577610009816 
+DLL 2024-11-14 19:43:00.173129 - (0, 11) glob_iter/iters_per_epoch : 11/13 
+DLL 2024-11-14 19:43:00.394214 - (0, 11) train_loss : 0.0024448735639452934 
+DLL 2024-11-14 19:43:00.918539 - (0, 11) train_items_per_sec : 515149.57090139814 items/s
+DLL 2024-11-14 19:43:00.918582 - (0, 11) train_iter_time : 0.7454145779993269 
+DLL 2024-11-14 19:43:00.918825 - (0, 12) glob_iter/iters_per_epoch : 12/13 
+DLL 2024-11-14 19:43:01.139779 - (0, 12) train_loss : 0.0020167308393865824 
+DLL 2024-11-14 19:43:01.663555 - (0, 12) train_items_per_sec : 515619.29615048843 items/s
+DLL 2024-11-14 19:43:01.663600 - (0, 12) train_iter_time : 0.744735510999817 
+DLL 2024-11-14 19:43:01.676775 - (0,) train_items_per_sec : 448995.8678262306 items/s
+DLL 2024-11-14 19:43:01.676815 - (0,) train_loss : 0.0020167308393865824 
+DLL 2024-11-14 19:43:01.676829 - (0,) train_epoch_time : 27.829299379000076 
+/workspace/benchmark/SpeechSynthesis/Tacotron2/train.py:293: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_run):
+DLL 2024-11-14 19:43:02.043461 - (0, 13, 0) val_items_per_sec : 1489798.0145035929 items/s
+DLL 2024-11-14 19:43:02.263134 - (0, 13, 1) val_items_per_sec : 1761064.460736721 items/s
+DLL 2024-11-14 19:43:03.262439 - (0, 13, 2) val_items_per_sec : 32062.411696680752 items/s
+DLL 2024-11-14 19:43:03.268797 - (0,) val_loss : 0.001879136039254566 None
+DLL 2024-11-14 19:43:03.268844 - (0,) val_items_per_sec : 1094308.295645665 items/s
+Saving model and optimizer state at epoch 0 to ./checkpoint_WaveGlow_0.pt
+DLL 2024-11-14 19:43:05.291215 - (1, 0) glob_iter/iters_per_epoch : 13/13 
+DLL 2024-11-14 19:43:08.492451 - (1, 0) train_loss : 0.0023154751397669315 
+DLL 2024-11-14 19:43:09.048464 - (1, 0) train_items_per_sec : 102200.13602405434 items/s
+DLL 2024-11-14 19:43:09.048534 - (1, 0) train_iter_time : 3.7573335510005563 
+DLL 2024-11-14 19:43:09.053100 - (1, 1) glob_iter/iters_per_epoch : 14/13 
+DLL 2024-11-14 19:43:09.273720 - (1, 1) train_loss : 0.0021227896213531494 
+DLL 2024-11-14 19:43:09.797633 - (1, 1) train_items_per_sec : 515748.792301305 items/s
+DLL 2024-11-14 19:43:09.797679 - (1, 1) train_iter_time : 0.7445485200005351 
+DLL 2024-11-14 19:43:09.797910 - (1, 2) glob_iter/iters_per_epoch : 15/13 
+DLL 2024-11-14 19:43:10.018864 - (1, 2) train_loss : 0.002279677428305149 
+DLL 2024-11-14 19:43:10.542568 - (1, 2) train_items_per_sec : 515674.1632871841 items/s
+DLL 2024-11-14 19:43:10.542678 - (1, 2) train_iter_time : 0.7446562719997019 
+DLL 2024-11-14 19:43:10.543090 - (1, 3) glob_iter/iters_per_epoch : 16/13 
+DLL 2024-11-14 19:43:10.765333 - (1, 3) train_loss : 0.002623162465170026 
+DLL 2024-11-14 19:43:11.291436 - (1, 3) train_items_per_sec : 513124.01594598504 items/s
+DLL 2024-11-14 19:43:11.291531 - (1, 3) train_iter_time : 0.7483570989988948 
+DLL 2024-11-14 19:43:11.291852 - (1, 4) glob_iter/iters_per_epoch : 17/13 
+DLL 2024-11-14 19:43:11.513039 - (1, 4) train_loss : 0.0017957643140107393 
+DLL 2024-11-14 19:43:12.037963 - (1, 4) train_items_per_sec : 514657.4840121093 items/s
+DLL 2024-11-14 19:43:12.038013 - (1, 4) train_iter_time : 0.7461273019998771 
+DLL 2024-11-14 19:43:12.038268 - (1, 5) glob_iter/iters_per_epoch : 18/13 
+DLL 2024-11-14 19:43:12.259969 - (1, 5) train_loss : 0.002489034552127123 
+DLL 2024-11-14 19:43:12.783900 - (1, 5) train_items_per_sec : 514994.04353018175 items/s
+DLL 2024-11-14 19:43:12.783953 - (1, 5) train_iter_time : 0.7456396920006227 
+DLL 2024-11-14 19:43:12.785740 - (1, 6) glob_iter/iters_per_epoch : 19/13 
+DLL 2024-11-14 19:43:13.006605 - (1, 6) train_loss : 0.0023469459265470505 
+DLL 2024-11-14 19:43:13.530443 - (1, 6) train_items_per_sec : 515640.3722140332 items/s
+DLL 2024-11-14 19:43:13.530531 - (1, 6) train_iter_time : 0.7447050709997711 
+DLL 2024-11-14 19:43:13.532365 - (1, 7) glob_iter/iters_per_epoch : 20/13 
+DLL 2024-11-14 19:43:13.754238 - (1, 7) train_loss : 0.002458323026075959 
+DLL 2024-11-14 19:43:14.278928 - (1, 7) train_items_per_sec : 514347.9283419294 items/s
+DLL 2024-11-14 19:43:14.278976 - (1, 7) train_iter_time : 0.7465763519994653 
+DLL 2024-11-14 19:43:14.280475 - (1, 8) glob_iter/iters_per_epoch : 21/13 
+DLL 2024-11-14 19:43:14.501559 - (1, 8) train_loss : 0.0017850376898422837 
+DLL 2024-11-14 19:43:15.025322 - (1, 8) train_items_per_sec : 515536.95400389424 items/s
+DLL 2024-11-14 19:43:15.025369 - (1, 8) train_iter_time : 0.7448544609997043 
+DLL 2024-11-14 19:43:15.029770 - (1, 9) glob_iter/iters_per_epoch : 22/13 
+DLL 2024-11-14 19:43:15.250971 - (1, 9) train_loss : 0.0023004254326224327 
+DLL 2024-11-14 19:43:15.774363 - (1, 9) train_items_per_sec : 515714.4165825662 items/s
+DLL 2024-11-14 19:43:15.774411 - (1, 9) train_iter_time : 0.7445981490000122 
+DLL 2024-11-14 19:43:15.774657 - (1, 10) glob_iter/iters_per_epoch : 23/13 
+DLL 2024-11-14 19:43:15.996265 - (1, 10) train_loss : 0.002205441240221262 
+DLL 2024-11-14 19:43:16.520184 - (1, 10) train_items_per_sec : 515068.3790830472 items/s
+DLL 2024-11-14 19:43:16.520231 - (1, 10) train_iter_time : 0.7455320799999754 
+DLL 2024-11-14 19:43:16.520567 - (1, 11) glob_iter/iters_per_epoch : 24/13 
+DLL 2024-11-14 19:43:16.739168 - (1, 11) train_loss : 0.0019972682930529118 
+DLL 2024-11-14 19:43:17.263039 - (1, 11) train_items_per_sec : 517188.00667889335 items/s
+DLL 2024-11-14 19:43:17.263089 - (1, 11) train_iter_time : 0.7424766139993153 
+DLL 2024-11-14 19:43:17.263364 - (1, 12) glob_iter/iters_per_epoch : 25/13 
+DLL 2024-11-14 19:43:17.486121 - (1, 12) train_loss : 0.002015033271163702 
+DLL 2024-11-14 19:43:18.009746 - (1, 12) train_items_per_sec : 514478.0976288072 items/s
+DLL 2024-11-14 19:43:18.009791 - (1, 12) train_iter_time : 0.7463874589993793 
+DLL 2024-11-14 19:43:18.019771 - (1,) train_items_per_sec : 483413.291510307 items/s
+DLL 2024-11-14 19:43:18.019817 - (1,) train_loss : 0.002015033271163702 
+DLL 2024-11-14 19:43:18.019832 - (1,) train_epoch_time : 12.8785836320003 
+DLL 2024-11-14 19:43:18.349694 - (1, 26, 0) val_items_per_sec : 1746332.0535036183 items/s
+DLL 2024-11-14 19:43:18.569813 - (1, 26, 1) val_items_per_sec : 1756732.3358474993 items/s
+DLL 2024-11-14 19:43:18.630078 - (1, 26, 2) val_items_per_sec : 542214.2790880754 items/s
+DLL 2024-11-14 19:43:18.636437 - (1,) val_loss : 0.002191664185374975 None
+DLL 2024-11-14 19:43:18.636482 - (1,) val_items_per_sec : 1348426.2228130642 items/s
+DLL 2024-11-14 19:43:18.637691 - () run_time : 46.80922690599982 s
+DLL 2024-11-14 19:43:18.637730 - () val_loss : 0.002191664185374975 None
+DLL 2024-11-14 19:43:18.637743 - () train_loss : 0.002015033271163702 
+DLL 2024-11-14 19:43:18.637753 - () train_items_per_sec : 483413.291510307 items/s
+DLL 2024-11-14 19:43:18.637763 - () val_items_per_sec : 1348426.2228130642 items/s
+DONE!
